@@ -9,8 +9,8 @@
   "author": "Jason Claeys",
   "license": "ISC",
   "dependencies": {
-    "chart.js": "^3.9.1",
     "colors": "^1.4.0",
+    "d3": "^7.6.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.1",
     "mysql": "^2.18.1"
