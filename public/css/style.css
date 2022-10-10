@@ -1,0 +1,55 @@
+body {
+  background-color: #f4f4f4;
+}
+
+#index-container {
+  margin-top: 4rem;
+}
+
+#index-container form {
+  margin-top: 3rem;
+  width: 30%;
+}
+
+#success-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#success-container .ui.positive.message {
+  height: 130px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+#success-container .ui.positive.message .header {
+  font-size: 24px;
+  margin-bottom: 0.4rem;
+}
+
+#success-container .ui.positive.message p {
+  font-size: 16px;
+}
+
+#login-container {
+  margin-top: 4rem;
+}
+
+#login-container h1 {
+  margin-bottom: 5rem;
+}
+
+#login-container #form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#login-container #form-container form {
+  width: 60%;
+}

@@ -1,4 +1,17 @@
-const connection = require('./server')
+require('dotenv').config()
+const mysql = require('mysql')
+
+const connection = mysql.createConnection({
+	host: 'localhost',
+	user: 'root',
+  password: process.env.ROOT_PASS,
+	database: 'users_app'
+})
+
+connection.connect(function(err) {
+  if (err) throw err
+  console.log("Connected!")
+})
 
 const createAdminTable = `
   CREATE TABLE admin (
@@ -14,7 +27,7 @@ connection.query(createAdminTable, (err, result) => {
 })
 
 const createAdmin = `
-  INSERT INTO admin (email, first_name, last_name)
+  INSERT INTO admin (email, password)
   VALUES ('jason@test.com', '123456')
 `
 
